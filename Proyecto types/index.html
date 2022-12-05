@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Adonis Mendoza</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+
+    <div class="card" style="width:18rem;">
+      <div class="card-header">
+          ESTUDIANTE
+        </div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Nombre:</label>
+            <input type="text" name="fullName" id="fullName" class="form-control" placeholder="Nombre  Apellido">
+          </div>
+          <div class="mb-3">
+            <label for="identification" class="form-label">Identificación:</label>
+            <input type="text" name="identification" id="identification" class="form-control" placeholder="00000000">
+          </div>
+          <div class="mb-3">
+            <label for="edad" class="form-label">edad:</label>
+            <input type="number" name="edad" id="edad" class="form-control" placeholder="01">
+          </div>
+          <div class="mb-3">
+            <label for="direction" class="form-label">Dirección:</label>
+            <input type="text" name="direction" id="direction" class="form-control" placeholder="Centro historico">
+          </div>
+          <div class="mb-3">
+            <label for="enrollment" class="form-label">Matrícula:</label>
+            <input type="number" name="enrollment" id="enrollment" class="form-control" placeholder="01">
+          </div>
+          <div class="mb-3">
+            <label for="level" class="form-label">Nivel:</label>
+            <input type="text" name="level" id="level" class="form-control" placeholder="semestre">
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <button class="btn btn-primary" onclick="addStudent()">Agregar estudiante</button>
+        </div>
+      </div>
+      <hr>
+      <div class="card" style="width:18rem;">
+        <div class="card-header">
+          PROFESOR
+        </div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Nombre:</label>
+            <input type="text" name="fullName" id="fullName" class="form-control"
+              placeholder="Nombre Apellidos">
+          </div>
+          <div class="mb-3">
+            <label for="identification" class="form-label">Identificación:</label>
+            <input type="text" name="identification" id="identification" class="form-control"
+              placeholder="00000000">
+          </div>
+        
+          <div class="mb-3">
+            <label for="direction" class="form-label">Dirección:</label>
+            <input type="text" name="direction" id="direction" class="form-control"
+              placeholder="Centro historico">
+          </div>
+          <div class="mb-3">
+            <label for="title" class="form-label">Título:</label>
+            <input type="text" name="title" id="title" class="form-control" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="class" class="form-label">clases: </label>
+            <select class="form-select form-select-lg" name="" id="class">
+            </select>
+          </div>
+
+        </div>
+        <div class="card-footer text-muted">
+          <button class="btn btn-primary" onclick="addTeacher()">Agregar profesor</button>
+        </div>
+      </div>
+      <hr>
+      <div class="card" style="width:18rem;">
+        <div class="card-header">
+          ACTIVIDAD
+        </div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre:</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="examen">
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <button class="btn btn-primary" onclick="addActivity()">Agregar actividad</button>
+        </div>
+      </div>
+      <hr>
+      <div class="card" style="width:18rem;">
+        <div class="card-header">
+          LIBRO DE CALIFICACIONES
+        </div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="examn" class="form-label">Valor:</label>
+            <input type="number" name="examn" id="examn" class="form-control" placeholder="100">
+          </div>
+          <div class="mb-3">
+            <label for="course" class="form-label">Curso:</label>
+            <select class="form-select form-select-lg" name="course" id="course">
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="activity" class="form-label">Actividad:</label>
+            <select class="form-select form-select-lg" name="activity" id="activity">
+                <option value="calculo">Factorizacion</option>
+                <option value=">Diseño de Interfaz">Free Code</option>
+                <option value="Programacion Visual">Diseño Grafico</option>
+                <option value="Admistracion">Crud</option>
+                <option value="Base de Datos">Postgret</option>
+            </select>
+        </div>
+       
+          <div class="mb-3">
+            <label for="califcacionMaxima" class="form-label">Nota máxima:</label>
+            <input type="number" name="califcacionMaxima" id="califcacionMaxima" class="form-control" placeholder="100">
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <button class="btn btn-primary" onclick="addcalifcacionMaxima()">Agregar actividad</button>
+        </div>
+
+      </div>
+    </div>
+    <script>let exports = {}; </script>
+    <script src="dist/main.js"></script>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
